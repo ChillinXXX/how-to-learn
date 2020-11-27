@@ -8,7 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
+/*Style for block Header*/
 .header {
   height: 100vh;
   min-height: 600px;
@@ -44,6 +44,7 @@
 
 .header__link{
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration{
@@ -71,17 +72,17 @@
   z-index: 3;
 }
 
-.logo__header{
+.logo_header{
   top: 30px;
   left: 64px;
 }
 
+/*Style for block Description*/
 .description{
   width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
-  /*border: 2px solid red;*/
 }
 
 
@@ -90,12 +91,10 @@
   padding: 100px 0;
   display: flex;
   justify-content: space-between;
-  /*border: 2px solid red;*/
 }
 
 .two-columns__brief{
   width: 175px;
-  /*border: 2px solid green;*/
 }
 
 .two-columns__brief-text{
@@ -109,7 +108,6 @@
 .two-columns__main-text{
   width: 80%;
   min-width: 784px;
-  /*border: 2px solid green;*/
 }
 
 .two-columns__main-text_paragraph{
@@ -125,6 +123,56 @@
 
 .span-accent{
   font-weight: bolder;
+}
+
+/*Style for block Feynman*/
+.feynman{
+  width: 100%;
+  height: 790px;
+  padding-top: 100px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.feynman__title{
+  margin: 0;
+  width: 648px;
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+
+.feynman__subtitle{
+  margin-top: 70px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.feynman__link{
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  z-index: 2;
+}
+
+.feynman__img{
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента
