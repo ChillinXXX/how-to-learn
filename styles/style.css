@@ -5,6 +5,24 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+a:hover {
+  opacity: .5;
+  transition: .2s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
 /*Style for section Header*/
 .header {
   height: 100vh;
@@ -74,7 +92,7 @@
 
 .description{
   width: 100%;
-  margin: 100px 0;
+  padding: 100px 0 0;
   display: flex;
   justify-content: center;
 }
@@ -100,14 +118,14 @@
 }
 
 .two-columns__paragraph{
-  margin: 0;
+  margin: 0 0 30px 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.two-columns__paragraph:nth-child(2){
-  margin: 30px 0;
+.two-columns__paragraph:last-child{
+  margin: 0;
 }
 
 .two-columns__span-accent{
@@ -119,7 +137,7 @@
 .feynman{
   width: 100%;
   min-height: 790px;
-  padding-top: 100px;
+  padding-top: 80px;
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
@@ -257,7 +275,7 @@
 
 .digits{
   width: 100%;
-  margin: 100px 0;
+  padding: 100px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -349,4 +367,216 @@
   margin-top: 80px;
   color: white;
   z-index: 1;
+}
+
+/*Style for section techniques*/
+
+.techniques{
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px 0 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.cards{
+  margin: 0;
+  max-width: 920px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  column-gap: 100px;
+}
+
+.cards__item{
+  width: 240px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*.cards__item:nth-child(3n){
+  margin: 0;
+}*/
+
+.cards__image{
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px;
+  border-radius: 50% ;
+}
+
+.cards__title{
+  margin: 0 0 16px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards__description{
+  margin: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*Style for section Video*/
+
+.video{
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.video__iframes{
+  position: relative;
+  top: 50px;
+  flex-flow: row wrap;
+}
+
+.video__iframe{
+  margin-right: 20px;
+  width: 515px;
+  height: 316px;
+}
+
+.video__iframe:last-child{
+  margin: 0;
+}
+
+/*Style for section Oakley*/
+
+.oakley{
+  width: 100%;
+  padding: 160px 0 0;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+
+/*Style for section Khan*/
+.khan{
+  width: 100%;
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author{
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+
+}
+
+.khan__title{
+  margin: 0 0 50px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.khan__quote{
+  margin: 0 0 68px;
+  width: 790px;
+}
+
+.khan__quote-text{
+  margin: 0 0 36px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+
+}
+
+.khan__quoete-author{
+  font-style: normal;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.khan__quote-author-subline{
+  margin: 10px 0 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container{
+  width: 100%;
+  display: flex;
+}
+
+.khan__book-pic{
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 48px;
+}
+
+.khan__buy-link{
+  margin: 0;
+  /*font-style: normal;*/
+  text-decoration: none;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+/*Style for section Resources*/
+
+.resources{
+  width: 100%;
+  padding: 100px 0 217px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.resources__logo-zone{
+  width: 1100px;
+  margin: 80px auto 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  list-style: none;
+}
+
+.resources__logo{
+
+}
+
+.resources__logo-link{
+  display: block;
+  width: 270px;
+  height: 38px;
+ }
+
+.resources__logo-link_info_arzamas{
+  background: url(../images/resources-arzamas.svg) center no-repeat;
+}
+
+.resources__logo-link_info_n1{
+  background: url(../images/resources-n1.svg) center no-repeat;
+}
+
+.resources__logo-link_info_strelka{
+  background: url(../images/resources-strelka.svg) center no-repeat;
+}
+
+.resources__logo-link_info_polka{
+  background: url(../images/resources-polka.svg) center no-repeat;
 }
